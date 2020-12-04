@@ -56,11 +56,14 @@ Machines within the network can only be accessed by the jumpbox or bastion host.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name     | Publicly Accessible | Allowed IP Addresses      |
+|----------|---------------------|---------------------------|
+| Jump Box | SSH - 22 - Yes        | 24.2.74.127             |
+| Web1,2,3 | No                    | Web LB - 40.112.220.173 |
+| Web LB   | HTTP - 80 - Yes       | *                       |
+| ELK      | Kibana - 5601 - Yes   | *                       |
+| ELK      | HTTP API - 9200 - Yes | 10.0.0.0/16             |
+
 
 ### Elk Configuration
 
