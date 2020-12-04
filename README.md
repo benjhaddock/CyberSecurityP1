@@ -92,7 +92,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - _Filebeats collects system type events such as logins to see who is actively logging into the system._
-  - [See here for Filebeats Example](Images/filebeats logs.png)
+  - [See here for Filebeats Example](Images/filebeats_logs.png)
 - _Metricbeats collects useful information such as cpu usage and memory, this is particularly useful when seeing if there are any aberant programs or behaviors taking system resources_
   - [See here for MetricBeats Example](Images/metricbeats_example.png)
 
