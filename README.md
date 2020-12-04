@@ -117,7 +117,7 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
   -![Example Screenshot](Images/ansible_host_example.png)
 - To run the Playbook: ansible-playbook /etc/ansible/roles/elk_install.yml
 - Check your installation is working by visiting in a browser: http://[your_elk_server_ip]:5601/app/kibana
-  - You should seem something similar to this:
+  - You should see something similar to this:
   - ![Exmaple Screenshot](Images/kibanaworking.png)
 
 - Installing Filebeats:
