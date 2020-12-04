@@ -112,3 +112,17 @@ Answers:
 - _Run the playbook, and navigate to http://[your_elk_server_ip]:5601/app/kibana to check that the installation worked as expected._
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- On the Jump box run the following command to get the playbook: curl https://github.com/benjhaddock/CyberSecurityP1/blob/main/Ansible/elk_install.yml > /etc/ansible/roles/elk_install.yml
+- Edit the hosts file in /etc/ansible and add the details from the screenshot and update your ip addresses
+  -![Example Screenshot](Images/ansible_host_example.png)
+- To run the Playbook: ansible-playbook /etc/ansible/roles/elk_install.yml
+- Check your installation is working by visiting in a browser: http://[your_elk_server_ip]:5601/app/kibana
+  - You should seem something similar to this:
+  - ![Exmaple Screenshot](Images/kibanaworking.png)
+
+- Installing Filebeats:
+  - Download the playbook with the following command: curl https://github.com/benjhaddock/CyberSecurityP1/blob/main/Ansible/filebeat_playbook.yml > /etc/ansible/roles/filebeak_playbook.yml
+  - Run the playbook with: ansible-playbook /etc/ansible/roles/filebeat_playbook.yml
+  - You should begin seeing information such as the following:
+  - ![Exmaple Screenshot](Images/filebeatworking.png)
+  - ![Example Screenshot](Images/filebeats_logs.png)
